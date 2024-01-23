@@ -8,7 +8,7 @@ const GraphHeader = () => {
   return (
     <div className='section-container'>
     <div className='graph-section'>
- <div className='head-title' style={{width:"800px"}}>
+ <div className='head-title' >
  <h1>Good Morning !</h1>
       <img src={sun} alt="" />
  </div>

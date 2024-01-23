@@ -93,11 +93,14 @@ justify-content: center;
 /* graph section head */
 .graph-section {
   display: flex;
+
   justify-content: space-between;
 }
 
 .section-container{
-  padding: 30px 50px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px 30px;
 }
 .head-title{
   display: flex;
