@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #e0e7e9;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
+}
+header{
+  padding: 30px;
+  background: #011627;
+  height: 40px;
+  width: 200px;
+}
+.logo{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.sidenav{
+  width: 200px;
+  background: #011627;
+  position: relative;
+  height: 95vh;
+  padding: 0 30px;
+  left: -100%;
+transition: all .8 s linear;
+}
+.sidenav:active{
+left: 0;
+}
+ul{
+  padding: 0;
+  position:absolute;
+  right: 0;
+}
+ul li{
+list-style-type:none ;
+margin: 30px 0;
+align-items: center;
+margin-bottom: 10px;
+
+}
+ul li a{
+  color: #eaecef;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  padding: 10px 40px;
+  border-radius: 6px;
+  background: #172b4b;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+ul li a:hover,
+ul li a.active{
+  background: #fff;
+  color: #000;
+}
+.activein{
+  background: #fff;
+  color: #000;
+}
+header svg{
+  font-size: 40px;
+}
+ul li img{
+ width: 20px;
+ margin-right: 10px; 
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 8px 0px;
+}
+.logout h1{
+font-size: 12px;
+color: red;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.logout img {
+  height: 15px; 
+  margin-left: 4px; 
 }
 
-.App-link {
-  color: #61dafb;
+/* graph section head */
+.graph-section {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-container{
+  padding: 30px 50px;
+}
+.head-title{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.head-title h1{
+  font-size: 20px;
+  color: #141414;
+}
+.head-title img{
+  width: 30px;
+  height: 30px;
+}
+.profile{
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0px 20px;
+  line-height: 7px;
+}
+.profile h2 {
+font-size: 15px;
+}
+.profile h4 {
+font-size: 10px;
+}
+.profile_img{
+margin:0px 7px;
 }
