@@ -9,12 +9,14 @@ import logo_text from "../Assets/StatBoard.png"
 const Sidebar = () => {
   return (
   <div className="sidenav active">
-    <div className='logo'>
+ <div style={{marginTop:"30px"}} className="logo-head">
+ <div className='logo'>
  <img  src={logo} alt="" />
     </div>
     <div  className='logo'>
     <img src={logo_text} alt="" />
     </div>
+ </div>
  
    
   

@@ -2,6 +2,7 @@ import React from 'react'
 import sun from "../Assets/sun png.webp"
 import profile from "../Assets/Rectangle 10.png"
 import Graph from './Graph'
+import Piechart from './Piechart'
 const GraphHeader = () => {
 
 
@@ -22,7 +23,11 @@ const GraphHeader = () => {
           </div>
         </div>
     </div>
-    {/* <Graph/> */}
+
+ <div style={{display:"flex",gap:"50px",marginTop:"50px"}}>
+ <Graph/>
+    <Piechart/>
+ </div>
     </div>
 
   ) 

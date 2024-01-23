@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from 'react';
 import Sidebar from './Sidebar';
 const Header = () => {
-    const [shownav, setShownav] = useState(true);
+    const [shownav, setShownav] = useState(false);
 
     useEffect(() => {
       const sidebar = document.querySelector('.sidenav');
