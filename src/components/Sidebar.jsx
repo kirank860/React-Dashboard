@@ -17,9 +17,6 @@ const Sidebar = () => {
     <img src={logo_text} alt="" />
     </div>
  </div>
- 
-   
-  
     <ul>
       <li><a className='activein' href="/"><img src={dashboard} alt="" /> Dashboard</a></li>
       <li><a href="/"><img src={support} alt="" /> Support</a></li>

@@ -3,9 +3,10 @@ import sun from "../Assets/sun png.webp"
 import profile from "../Assets/Rectangle 10.png"
 import Graph from './Graph'
 import Piechart from './Piechart'
+import Table from './Table'
+import Profil from './Profil'
+import Pagination from './Pagination'
 const GraphHeader = () => {
-
-
   return (
     <div className='section-container'>
     <div className='graph-section'>
@@ -23,11 +24,15 @@ const GraphHeader = () => {
           </div>
         </div>
     </div>
-
- <div style={{display:"flex",gap:"50px",marginTop:"50px"}}>
+ <div style={{display:"flex",gap:"50px",marginTop:"50px",flexWrap:"wrap"}}>
  <Graph/>
     <Piechart/>
+    <Table/>
+    <Profil/>
  </div>
+ <div className='pagination'>
+<Pagination/>
+</div>
     </div>
 
   ) 
